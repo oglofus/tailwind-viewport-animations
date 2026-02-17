@@ -71,3 +71,9 @@ Then use classes in your markup:
 These utilities rely on `animation-timeline: view()` / scroll-driven animations. Ensure target browsers support this API.
 
 Compatibility reference: https://caniuse.com/?search=animation-timeline
+
+## Used by
+
+- https://deskify.app
+- https://oglofus.com
+- https://uploft.app

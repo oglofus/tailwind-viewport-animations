@@ -13,7 +13,8 @@
   ],
   "scripts": {
     "build:check": "tailwindcss -i ./test/fixtures/input.css -o ./test/fixtures/output.css",
-    "pack:check": "npm pack --dry-run"
+    "pack:check": "npm pack --dry-run",
+    "site:build": "mkdir -p docs/assets && tailwindcss -i ./docs/styles.css -o ./docs/assets/site.css --minify"
   },
   "keywords": [
     "tailwindcss",

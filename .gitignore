@@ -59,3 +59,4 @@ dist
 .pnp.*
 .npm-cache/
 test/**/output.css
+docs/assets/site.css

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tailwind Viewport Animations Demo</title>
+        <meta
+            name="description"
+            content="Interactive examples for @oglofus/tailwind-viewport-animations"
+        />
+        <link rel="stylesheet" href="./assets/site.css" />
+    </head>
+    <body class="text-slate-100 antialiased">
+        <header
+            class="sticky top-0 z-20 border-b border-white/10 bg-slate-950/80 backdrop-blur"
+        >
+            <div
+                class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8"
+            >
+                <h1 class="text-sm font-semibold tracking-wide sm:text-base">
+                    @oglofus/tailwind-viewport-animations demo
+                </h1>
+                <a
+                    class="demo-chip"
+                    href="https://www.npmjs.com/package/@oglofus/tailwind-viewport-animations"
+                    target="_blank"
+                    rel="noreferrer"
+                    >npm package</a
+                >
+            </div>
+        </header>
+
+        <main
+            class="mx-auto flex max-w-6xl flex-col gap-40 px-4 py-20 sm:px-6 lg:px-8"
+        >
+            <section
+                class="grid min-h-[200dvh] content-center gap-10 md:grid-cols-2 lg:grid-cols-3"
+            >
+                <article class="demo-card va-fade va-start-10 va-end-55">
+                    <span class="demo-label">fade / default</span>
+                    <h2 class="mb-2 text-xl font-semibold">va-fade</h2>
+                    <p class="text-sm text-slate-300">va-start-10 va-end-55</p>
+                </article>
+
+                <article
+                    class="demo-card va-slide-up va-start-20 va-end-75 va-distance-140"
+                >
+                    <span class="demo-label">slide up</span>
+                    <h2 class="mb-2 text-xl font-semibold">va-slide-up</h2>
+                    <p class="text-sm text-slate-300">va-distance-140</p>
+                </article>
+
+                <article
+                    class="demo-card va-zoom va-start-[70%] va-end-[15%] va-duration-900"
+                >
+                    <span class="demo-label">arbitrary ranges</span>
+                    <h2 class="mb-2 text-xl font-semibold">va-zoom</h2>
+                    <p class="text-sm text-slate-300">
+                        va-start-[70%] va-end-[15%] va-duration-900
+                    </p>
+                </article>
+            </section>
+
+            <section class="grid min-h-[150dvh] content-center py-16">
+                <h2 class="mb-6 text-2xl font-semibold">
+                    New animation variants
+                </h2>
+                <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+                    <article class="demo-card va-blur-in va-start-15 va-end-65">
+                        <span class="demo-label">blur in</span>
+                        <p>va-blur-in</p>
+                    </article>
+                    <article
+                        class="demo-card va-rotate-in va-start-20 va-end-60"
+                    >
+                        <span class="demo-label">rotate in</span>
+                        <p>va-rotate-in</p>
+                    </article>
+                    <article class="demo-card va-pop va-start-10 va-end-70">
+                        <span class="demo-label">pop</span>
+                        <p>va-pop</p>
+                    </article>
+                    <article
+                        class="demo-card va-reveal-up va-start-25 va-end-80"
+                    >
+                        <span class="demo-label">reveal up</span>
+                        <p>va-reveal-up</p>
+                    </article>
+                    <article
+                        class="demo-card va-flip-y va-start-25 va-end-80 va-ease-snap"
+                    >
+                        <span class="demo-label">flip y</span>
+                        <p>va-flip-y va-ease-snap</p>
+                    </article>
+                    <article
+                        class="demo-card va-slide-right va-start-20 va-end-70 va-distance-[20vh]"
+                    >
+                        <span class="demo-label">custom distance</span>
+                        <p>va-slide-right va-distance-[20vh]</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="grid min-h-[150dvh] content-center py-16">
+                <h2 class="mb-6 text-2xl font-semibold">
+                    Duration and ease controls
+                </h2>
+                <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+                    <article
+                        class="demo-card va-slide-left va-duration-400 va-ease-out va-start-15 va-end-65"
+                    >
+                        <span class="demo-label">quick</span>
+                        <p>va-duration-400 va-ease-out</p>
+                    </article>
+                    <article
+                        class="demo-card va-slide-left va-duration-1200 va-ease-smooth va-start-15 va-end-65"
+                    >
+                        <span class="demo-label">slow smooth</span>
+                        <p>va-duration-1200 va-ease-smooth</p>
+                    </article>
+                    <article
+                        class="demo-card va-slide-left va-duration-[1.6s] va-ease-[cubic-bezier(0.17,0.67,0.83,0.67)] va-start-15 va-end-65"
+                    >
+                        <span class="demo-label">arbitrary</span>
+                        <p>va-duration-[1.6s] va-ease-[cubic-bezier(...)]</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="grid min-h-[150dvh] content-center py-16 pb-28">
+                <h2 class="mb-6 text-2xl font-semibold">Iteration behavior</h2>
+                <div class="grid gap-10 md:grid-cols-2">
+                    <article
+                        class="demo-card va-zoom va-once va-start-20 va-end-80 va-duration-1200"
+                    >
+                        <span class="demo-label">run once</span>
+                        <p>va-once</p>
+                    </article>
+                    <article
+                        class="demo-card va-zoom va-repeat va-start-20 va-end-80 va-duration-1200 va-ease-in-out"
+                    >
+                        <span class="demo-label">repeat</span>
+                        <p>va-repeat</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
