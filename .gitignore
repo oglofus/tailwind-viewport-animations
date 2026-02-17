@@ -60,3 +60,5 @@ dist
 .npm-cache/
 test/**/output.css
 docs/assets/site.css
+**/.DS_Store
+.DS_Store
