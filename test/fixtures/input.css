@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@plugin "../../index.js";
+
+@source inline("va va-start-15 va-end-75 va-start-[80%] va-end-[20px] va-end-23 va-slide-up va-blur-in va-rotate-in va-pop va-reveal-up va-flip-y va-duration-800 va-duration-[1.4s] va-distance-120 va-distance-[20vh] va-ease-smooth va-ease-[cubic-bezier(0.17,0.67,0.83,0.67)] va-once va-repeat");

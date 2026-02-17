@@ -1,0 +1,46 @@
+{
+  "name": "@oglofus/tailwind-viewport-animations",
+  "version": "1.0.0",
+  "description": "Viewport animation utilities for Tailwind CSS v4",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build:check": "tailwindcss -i ./test/fixtures/input.css -o ./test/fixtures/output.css",
+    "pack:check": "npm pack --dry-run"
+  },
+  "keywords": [
+    "tailwindcss",
+    "tailwindcss-plugin",
+    "animation",
+    "scroll-animation",
+    "view-timeline"
+  ],
+  "homepage": "https://github.com/oglofus/tailwind-viewport-animations#readme",
+  "bugs": {
+    "url": "https://github.com/oglofus/tailwind-viewport-animations/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oglofus/tailwind-viewport-animations.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "oglofus (https://oglofus.com/)",
+  "license": "ISC",
+  "peerDependencies": {
+    "tailwindcss": "^4.1.18"
+  },
+  "private": false,
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
