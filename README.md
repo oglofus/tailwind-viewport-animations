@@ -1,4 +1,4 @@
-# @oglofus/tailwind-viewport-animations
+# @oglofus/tailwind-viewport-animations [![NPM Version](https://img.shields.io/npm/v/%40oglofus%2Ftailwind-viewport-animations)](https://www.npmjs.com/package/@oglofus/tailwind-viewport-animations) [![Publish Package to NPM](https://github.com/oglofus/tailwind-viewport-animations/actions/workflows/release-package.yml/badge.svg)](https://github.com/oglofus/tailwind-viewport-animations/actions/workflows/release-package.yml)
 
 Viewport animation utilities for Tailwind CSS v4.
 
