@@ -2,6 +2,8 @@
 
 Viewport animation utilities for Tailwind CSS v4.
 
+Demo: https://oglofus.github.io/tailwind-viewport-animations/
+
 ## Install
 
 ```bash
